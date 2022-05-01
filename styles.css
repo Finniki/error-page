@@ -1,0 +1,54 @@
+.error {
+  padding: 20px;
+  font-size: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+}
+.page-div {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+img {
+  padding-left: 20px;
+}
+.text-div {
+  width: 500px;
+  font-family: "Courier New", Courier, monospace;
+  padding: 50px 20px;
+}
+h1 {
+  word-spacing: 20px;
+  line-height: 50px;
+  padding-bottom: 50px;
+}
+.text-div > p {
+  word-spacing: 10px;
+  line-height: 30px;
+  padding-bottom: 50px;
+  letter-spacing: 0.1px;
+}
+
+button {
+  padding: 20px;
+  width: 200px;
+  font-size: 11px;
+  font-weight: bolder;
+  word-spacing: 10px;
+  color: white;
+  background-color: black;
+}
+
+@media screen and (max-width: 425px) {
+  .error {
+    font-size: 30px;
+  }
+  .page-div {
+    flex-direction: column;
+  }
+  h1,
+  .text-div > p {
+    width: auto;
+  }
+}
